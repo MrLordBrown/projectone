@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Blogorama Bloginator</title>
+<link href="https://fonts.googleapis.com/css2?family=Kanit&family=Taviraj&display=swap" rel="stylesheet">	
+	<!-- update the version number as needed -->
+	<script defer src="/__/firebase/7.13.1/firebase-app.js"></script>
+	<!-- include only the Firebase features as you need -->
+	<script defer src="/__/firebase/7.13.1/firebase-auth.js"></script>
+	<script defer src="/__/firebase/7.13.1/firebase-database.js"></script>
+	<script defer src="/__/firebase/7.13.1/firebase-messaging.js"></script>
+	<script defer src="/__/firebase/7.13.1/firebase-storage.js"></script>
+	<!-- initialize the SDK after all desired features are loaded -->
+	<script defer src="/__/firebase/init.js"></script>
+	<link href="css/styles.css" rel="stylesheet">
+    </head>
+    <body>
+	<main id="index-cont">
+	    <header id="index-title" class="primary-text">Blogorama Bloginator</header>
+	    <nav id="index-menu">
+		<button id="home" class="item">home</button>
+		<button id="posts" class="item">posts</button>
+		<button id="about" class="item">about</button>
+	    </nav>
+	    <article id="sums">
+		<section id="post-1" class="odd">
+		    <img class="icon" src="assets/fire.svg.png">
+			<p class="sum-txt"> The element of fire is not for the faint of heart.</p>
+			<h2> Fire</h2>
+		    </section>
+	      <section id="post-2" class="even">
+		  <img class="icon"  src="assets/water.svg.png">
+		  <p class="sum-txt"> If you need to talk about it, the rain always listens.</p>
+		  <h2> Water</h2>
+	      </section>
+	      <section id="post-3" class="odd">
+		  <img class="icon"  src="assets/air.svg.png">
+		  <p class="sum-txt">A breath of fresh air is great for the mind.</p>
+		  <h2> Air</h2>
+	      </section>
+	      <section id="post-4" class="even">
+	     	  <img class="icon"  src="assets/earth.svg.png">
+		  <p class="sum-txt">Grounded is only one way to describe this element</p>
+		  <h2> Earth</h2>
+	      </section>
+	      <section id="post-5" class="odd">
+	     	  <img class="icon"  src="assets/light.svg.png">
+		  <p class="sum-txt">When it is too dark to see, shed some light on it.</p>
+		  <h2> Light</h2>
+	      </section>
+	      <section id="post-6" class="even">
+		<img class="icon"  src="assets/dark.svg.png">
+		  <p class="sum-txt">When the light is too bright, it is easy to see in the dark.</p>
+		  <h2> Dark</h2>
+		</section>
+	      </article>
+	      <footer id="foot" class="links">
+		<a href="https://www.udacity.com/">Udacity</a>
+		<a href="https://en.wikipedia.org/wiki/Chemical_element">Elements</a>
+		<a href="https://en.wikipedia.org/wiki/Chemical_element">Blog</a>
+	      </footer>
+	    </main>
+	    <script>
+	      document.addEventListener('DOMContentLoaded', function() {
+	      // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+	      // // The Firebase SDK is initialized and available here!
+              //
+              // firebase.auth().onAuthStateChanged(user => { });
+              // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
+              // firebase.messaging().requestPermission().then(() => { });
+              // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
+              //
+             // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+	     
+             try {
+		 let app = firebase.app();
+		 let features = ['auth', 'database', 'messaging', 'storage'].filter(feature => typeof app[feature] === 'function');
+		 document.getElementById('load').innerHTML = `Firebase SDK loaded with ${features.join(', ')}`;
+             } catch (e) {
+		 console.error(e);
+		 document.getElementById('load').innerHTML = 'Error loading the Firebase SDK, check the console.';
+             }
+	 });
+	</script>
+    </body>
+</html>

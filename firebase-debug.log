@@ -1,0 +1,81 @@
+[debug] [2020-04-03T22:06:37.638Z] ----------------------------------------------------------------------
+[debug] [2020-04-03T22:06:37.641Z] Command:       /home/mrlordvondoombraun/.config/nvm/versions/node/v12.16.1/bin/node /home/mrlordvondoombraun/.config/nvm/versions/node/v12.16.1/bin/firebase serve --token 1//03TVovYXrEy9KCgYIARAAGAMSNwF-L9IrsGYDMzJuQr6MJPCY6QVlL6hupeel91DOw8VKWBX3KuI2fTRo4e1ChiYXLHBKr62XYY8
+[debug] [2020-04-03T22:06:37.642Z] CLI Version:   7.16.2
+[debug] [2020-04-03T22:06:37.642Z] Platform:      linux
+[debug] [2020-04-03T22:06:37.642Z] Node Version:  v12.16.1
+[debug] [2020-04-03T22:06:37.643Z] Time:          Fri Apr 03 2020 15:06:37 GMT-0700 (Pacific Daylight Time)
+[debug] [2020-04-03T22:06:37.643Z] ----------------------------------------------------------------------
+[debug] [2020-04-03T22:06:37.643Z] 
+[debug] [2020-04-03T22:06:37.656Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-04-03T22:06:37.656Z] > authorizing via --token option
+[debug] [2020-04-03T22:06:37.657Z] [iam] checking project pwa-yo for permissions ["firebase.projects.get"]
+[debug] [2020-04-03T22:06:37.661Z] > refreshing access token with scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-04-03T22:06:37.662Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2020-04-03T22:06:38.578Z] <<< HTTP RESPONSE 200
+[debug] [2020-04-03T22:06:38.581Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/pwa-yo:testIamPermissions  
+
+[debug] [2020-04-03T22:06:40.514Z] <<< HTTP RESPONSE 200
+[debug] [2020-04-03T22:06:40.516Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/pwa-yo  
+ 
+[debug] [2020-04-03T22:06:41.845Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/home/mrlordvondoombraun/udacity_project1'...
+[info] 
+[debug] [2020-04-03T22:06:41.875Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/pwa-yo/webApps/-/config  
+ 
+[debug] [2020-04-03T22:06:43.381Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: public
+[info] ✔  hosting: Local server: http://localhost:5000
+[warn] ⚠  hosting: Could not load Firebase SDK firebase-database.js v7.13.1, check your internet connection.
+[debug] [2020-04-03T22:07:26.030Z] Error: connect ETIMEDOUT 172.217.169.35:443
+[warn] ⚠  hosting: Could not load Firebase SDK firebase-messaging.js v7.13.1, check your internet connection.
+[debug] [2020-04-03T23:32:56.634Z] Error: connect ETIMEDOUT 172.217.169.35:443
+[warn] ⚠  hosting: Could not load Firebase SDK firebase-auth.js v7.13.1, check your internet connection.
+[debug] [2020-04-03T23:39:06.240Z] Error: connect ETIMEDOUT 172.217.169.35:443
+[warn] ⚠  hosting: Could not load Firebase SDK firebase-storage.js v7.13.1, check your internet connection.
+[debug] [2020-04-03T23:39:52.910Z] Error: getaddrinfo EAI_AGAIN www.gstatic.com
+[warn] ⚠  hosting: Could not load Firebase SDK firebase-app.js v7.13.1, check your internet connection.
+[debug] [2020-04-03T23:40:47.075Z] Error: getaddrinfo EAI_AGAIN www.gstatic.com
+[warn] ⚠  hosting: Could not load Firebase SDK firebase-auth.js v7.13.1, check your internet connection.
+[debug] [2020-04-03T23:40:47.103Z] Error: getaddrinfo EAI_AGAIN www.gstatic.com
+[warn] ⚠  hosting: Could not load Firebase SDK firebase-database.js v7.13.1, check your internet connection.
+[debug] [2020-04-03T23:40:57.092Z] Error: getaddrinfo EAI_AGAIN www.gstatic.com
+[warn] ⚠  hosting: Could not load Firebase SDK firebase-messaging.js v7.13.1, check your internet connection.
+[debug] [2020-04-03T23:40:57.106Z] Error: getaddrinfo EAI_AGAIN www.gstatic.com
+[warn] ⚠  hosting: Could not load Firebase SDK firebase-storage.js v7.13.1, check your internet connection.
+[debug] [2020-04-03T23:41:07.095Z] Error: getaddrinfo EAI_AGAIN www.gstatic.com
+[warn] ⚠  hosting: Could not load Firebase SDK firebase-app.js v7.13.1, check your internet connection.
+[debug] [2020-04-03T23:41:13.367Z] Error: getaddrinfo EAI_AGAIN www.gstatic.com
+[warn] ⚠  hosting: Could not load Firebase SDK firebase-auth.js v7.13.1, check your internet connection.
+[debug] [2020-04-03T23:41:17.104Z] Error: getaddrinfo EAI_AGAIN www.gstatic.com
+[warn] ⚠  hosting: Could not load Firebase SDK firebase-database.js v7.13.1, check your internet connection.
+[debug] [2020-04-03T23:41:23.370Z] Error: getaddrinfo EAI_AGAIN www.gstatic.com
+[warn] ⚠  hosting: Could not load Firebase SDK firebase-auth.js v7.13.1, check your internet connection.
+[debug] [2020-04-03T23:41:57.219Z] Error: connect ETIMEDOUT 108.177.127.94:443
+[warn] ⚠  hosting: Could not load Firebase SDK firebase-database.js.map v7.13.1, check your internet connection.
+[debug] [2020-04-03T23:44:06.735Z] Error: connect ETIMEDOUT 108.177.127.94:443
+[warn] ⚠  hosting: Could not load Firebase SDK firebase-storage.js v7.13.1, check your internet connection.
+[debug] [2020-04-03T23:50:17.884Z] Error: connect ETIMEDOUT 172.217.169.35:443
+[warn] ⚠  hosting: Could not load Firebase SDK firebase-storage.js v7.13.1, check your internet connection.
+[debug] [2020-04-03T23:52:19.206Z] Error: connect ETIMEDOUT 172.217.169.35:443
+[warn] ⚠  hosting: Could not load Firebase SDK firebase-app.js v7.13.1, check your internet connection.
+[debug] [2020-04-04T00:48:22.959Z] Error: connect ETIMEDOUT 172.217.169.35:443
+[warn] ⚠  hosting: Could not load Firebase SDK firebase-auth.js v7.13.1, check your internet connection.
+[debug] [2020-04-04T00:50:58.583Z] Error: connect ETIMEDOUT 172.217.169.35:443
+[warn] ⚠  hosting: Could not load Firebase SDK firebase-app.js v7.13.1, check your internet connection.
+[debug] [2020-04-04T02:17:28.525Z] Error: getaddrinfo EAI_AGAIN www.gstatic.com
+[warn] ⚠  hosting: Could not load Firebase SDK firebase-auth.js v7.13.1, check your internet connection.
+[debug] [2020-04-04T02:17:28.532Z] Error: getaddrinfo EAI_AGAIN www.gstatic.com
+[warn] ⚠  hosting: Could not load Firebase SDK firebase-database.js v7.13.1, check your internet connection.
+[debug] [2020-04-04T02:17:38.526Z] Error: getaddrinfo EAI_AGAIN www.gstatic.com
+[warn] ⚠  hosting: Could not load Firebase SDK firebase-messaging.js v7.13.1, check your internet connection.
+[debug] [2020-04-04T02:17:38.534Z] Error: getaddrinfo EAI_AGAIN www.gstatic.com
+[warn] ⚠  hosting: Could not load Firebase SDK firebase-storage.js v7.13.1, check your internet connection.
+[debug] [2020-04-04T02:17:48.532Z] Error: getaddrinfo EAI_AGAIN www.gstatic.com
+[warn] ⚠  hosting: Could not load Firebase SDK firebase-app.js v7.13.1, check your internet connection.
+[debug] [2020-04-04T02:19:28.515Z] Error: getaddrinfo EAI_AGAIN www.gstatic.com
+[warn] ⚠  hosting: Could not load Firebase SDK firebase-auth.js v7.13.1, check your internet connection.
+[debug] [2020-04-04T02:19:28.544Z] Error: getaddrinfo EAI_AGAIN www.gstatic.com
+[warn] ⚠  hosting: Could not load Firebase SDK firebase-database.js v7.13.1, check your internet connection.
+[debug] [2020-04-04T02:19:38.527Z] Error: getaddrinfo EAI_AGAIN www.gstatic.com
