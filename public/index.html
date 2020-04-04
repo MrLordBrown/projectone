@@ -14,46 +14,63 @@
 	<script defer src="/__/firebase/7.13.1/firebase-storage.js"></script>
 	<!-- initialize the SDK after all desired features are loaded -->
 	<script defer src="/__/firebase/init.js"></script>
-	<link href="css/styles.css" rel="stylesheet">
+	<link href="css/index.css" rel="stylesheet">
     </head>
     <body>
 	<main id="index-cont">
-	    <header id="index-title" class="primary-text">Blogorama Bloginator</header>
+	    <header id="index-title" class="primary-text"><h1>Blogorama Bloginator</h1></header>
 	    <nav id="index-menu">
-		<button id="home" class="item">home</button>
-		<button id="posts" class="item">posts</button>
-		<button id="about" class="item">about</button>
+		<a id="home" class="item" href="index.html">home</a>
+		<a id="posts" class="item" href="posts.html">posts</a>
+		<a id="subscribe" class="item">subscribe</a>
+		<form id="sub-form" action="index.html">
+		    <fieldset>
+			<legend>Subscribe</legend>
+			<h2> The Blogorama Bloginator needs you!</h2>
+			<h3> Subscribe today and keep The Blog-Blog out of trouble.</h3>
+			<label for="who">Name:</label>
+			<br>
+			<input type="text" id="who" name="who">
+			<br>
+			<label for="email">Email:</label>
+			<br>
+			<input type="text" id="email" name="email">
+			<br>
+			<input type="submit" id="mit-it" name="mit-it" value="Subscribe!">
+			<br>
+		    </fieldset>
+		</form>
 	    </nav>
 	    <article id="sums">
 		<section id="post-1" class="odd">
-		    <img class="icon" src="assets/fire.svg.png">
-			<p class="sum-txt"> The element of fire is not for the faint of heart.</p>
-			<h2> Fire</h2>
-		    </section>
-	      <section id="post-2" class="even">
-		  <img class="icon"  src="assets/water.svg.png">
-		  <p class="sum-txt"> If you need to talk about it, the rain always listens.</p>
-		  <h2> Water</h2>
-	      </section>
-	      <section id="post-3" class="odd">
-		  <img class="icon"  src="assets/air.svg.png">
-		  <p class="sum-txt">A breath of fresh air is great for the mind.</p>
-		  <h2> Air</h2>
-	      </section>
-	      <section id="post-4" class="even">
-	     	  <img class="icon"  src="assets/earth.svg.png">
-		  <p class="sum-txt">Grounded is only one way to describe this element</p>
-		  <h2> Earth</h2>
-	      </section>
-	      <section id="post-5" class="odd">
-	     	  <img class="icon"  src="assets/light.svg.png">
+		    <a href="posts.html#post-fire"><img class="icon" src="assets/fire.svg.png"></a>
+		    <p class="sum-txt"> The element of fire is not for the faint of heart.</p>
+		    <h2> Fire</h2>
+		</section>
+		<section id="post-2" class="even">
+		    <a href="posts.html#post-water"><img class="icon"  src="assets/water.svg.png"></a>
+		    <p class="sum-txt"> If you need to talk about it, the rain always listens.</p>
+		    <h2> Water</h2>
+		</section>
+		<section id="post-3" class="odd">
+		    <a href="posts.html#post-air"><img class="icon"  src="assets/air.svg.png"></a>
+		    <p class="sum-txt">A breath of fresh air is great for the mind.</p>
+		    <h2> Air</h2>
+		</section>
+		<section id="post-4" class="even">
+	     	    <a href="posts.html#post-earth"><img class="icon"  src="assets/earth.svg.png"></a>
+			<p class="sum-txt">Grounded is only one way to describe this element</p>
+			<h2> Earth</h2>
+		</section>
+		<section id="post-5" class="odd">
+	     	    <a href="posts.html#post-light"><img class="icon"  src="assets/light.svg.png"></a>
 		  <p class="sum-txt">When it is too dark to see, shed some light on it.</p>
 		  <h2> Light</h2>
-	      </section>
-	      <section id="post-6" class="even">
-		<img class="icon"  src="assets/dark.svg.png">
-		  <p class="sum-txt">When the light is too bright, it is easy to see in the dark.</p>
-		  <h2> Dark</h2>
+		</section>
+		<section id="post-6" class="even">
+		    <a href="posts.html#post-dark"><img class="icon"  src="assets/dark.svg.png"></a>
+		    <p class="sum-txt">When the light is too bright, it is easy to see in the dark.</p>
+		    <h2> Dark</h2>
 		</section>
 	      </article>
 	      <footer id="foot" class="links">
@@ -62,12 +79,13 @@
 		<a href="https://en.wikipedia.org/wiki/Chemical_element">Blog</a>
 	      </footer>
 	    </main>
-	    <script>
-	      document.addEventListener('DOMContentLoaded', function() {
+		      
+	      <script>
+		document.addEventListener('DOMContentLoaded', function() {
 	      // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
 	      // // The Firebase SDK is initialized and available here!
               //
-              // firebase.auth().onAuthStateChanged(user => { });
+             // firebase.auth().onAuthStateChanged(user => { });
               // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
               // firebase.messaging().requestPermission().then(() => { });
               // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });

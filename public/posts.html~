@@ -26,37 +26,41 @@
 	    </nav>
 	    <article id="sums">
 		<section id="post-1" class="odd">
-		   	<img class="icon" src="assets/fire.svg.png">
+		    <img class="icon" src="assets/fire.svg.png">
 			<h2> Fire</h2>
 			<p class="sum-txt"> The element of fire is not for the faint of heart.</p>
 		    </section>
 	      <section id="post-2" class="even">
 		  <img class="icon"  src="assets/water.svg.png">
-			<h2> Water</h2>
-			<p class="sum-txt"> If you need to talk about it, the rain always listens.</p>
-	     </section>
-	     <section id="post-3" class="odd">
-		 <img class="icon"  src="assets/air.svg.png">
-			<h2> Air</h2>
-			<p class="sum-txt">A breath of fresh air is great for the mind.</p>
-	     </section>
-	     <section id="post-4" class="even">
-	     	<img class="icon"  src="assets/earth.svg.png">
-			<h2> Earth</h2>
-			<p class="sum-txt">Grounded is only one way to describe this element</p>
-	     </section>
-	     <section id="post-5" class="odd">
-	     	<img class="icon"  src="assets/light.svg.png">
-			<h2> Light</h2>
-			<p class="sum-txt">When it is too dark to see, shed some light on it.</p>
-	     </section>
-	     <section id="post-6" class="even">
-	     	<img class="icon"  src="assets/dark.svg.png">
-			<h2> Dark</h2>
-			<p class="sum-txt">When the light is too bright, it is easy to see in the dark.</p>
-	     </section>
+		  <h2> Water</h2>
+		  <p class="sum-txt"> If you need to talk about it, the rain always listens.</p>
+	      </section>
+	      <section id="post-3" class="odd">
+		  <img class="icon"  src="assets/air.svg.png">
+		  <h2> Air</h2>
+		  <p class="sum-txt">A breath of fresh air is great for the mind.</p>
+	      </section>
+	      <section id="post-4" class="even">
+	     	  <img class="icon"  src="assets/earth.svg.png">
+		  <h2> Earth</h2>
+		  <p class="sum-txt">Grounded is only one way to describe this element</p>
+	      </section>
+	      <section id="post-5" class="odd">
+	     	  <img class="icon"  src="assets/light.svg.png">
+		  <h2> Light</h2>
+		  <p class="sum-txt">When it is too dark to see, shed some light on it.</p>
+	      </section>
+	      <section id="post-6" class="even">
+		  <img class="icon"  src="assets/dark.svg.png">
+		  <h2> Dark</h2>
+		  <p class="sum-txt">When the light is too bright, it is easy to see in the dark.</p>
+	      </section>
 	    </article>
-	    <footer id="foot" class="links"></footer>
+	    <footer id="foot" class="links">
+		<a href="https://www.udacity.com/">Udacity</a>
+		<a href="https://en.wikipedia.org/wiki/Chemical_element">Elements</a>
+		<a href="https://en.wikipedia.org/wiki/Chemical_element">Blog</a>
+	    </footer>
 	</main>
 	<script>
 	 document.addEventListener('DOMContentLoaded', function() {
