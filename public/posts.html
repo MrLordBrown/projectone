@@ -4,7 +4,8 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Blogorama Bloginator</title>
-<link href="https://fonts.googleapis.com/css2?family=Kanit&family=Taviraj&display=swap" rel="stylesheet">	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	  <link href="https://fonts.googleapis.com/css2?family=Kanit&family=Taviraj&display=swap" rel="stylesheet">	
 	<!-- update the version number as needed -->
 	<script defer src="/__/firebase/7.13.1/firebase-app.js"></script>
 	<!-- include only the Firebase features as you need -->
@@ -98,16 +99,17 @@
 		</article>
 	</main>
 	<div id="top"><a href="posts.html">Top</a></div>
-	<div id="card">
-	    <img src="crb.png" alt="Author Photo">
-	    <p id="at-nm">Christopher Brown</p>
-	    <p id="at-bio">Christopher Brown is a father, professional environmental planner, no-doz gamer, electronics and computer enthusiast, and poet. Some think he is a wizard; they may be right.</p>
-	    <a href="https://facebook.com"><img src="fb.png" alt="facebook icon"></a>
-	    <a href="https://github.com"><img src="gh.png" alt="github icon"></a>
-	    <a href="https://christopherrobinbrown.com"><img src="web.png" alt="website icon"></a>
-	    <a href="mail@mrlordvondoombraun@gmail.com"><img srec="mail.png" alt="email icon"></a>
+	<div id="card-cont">
+	  <div id="card">
+	    <img id ="crb-pic" src="assets/crb.png" alt="Author Photo">
+	      <p class="card-item" id="at-nm">Christopher Brown</p>
+	      <p class="card-item" id="at-bio">Christopher Brown is a father, professional environmental planner, no-doz gamer, electronics and computer enthusiast, and poet. Some think he is a wizard; they may be right.</p>
+	    <a class="si fa fa-facebook" id="fb" href="https://facebook.com"></a>
+	    <a  class="si fa fa-github" id="gh" href="https://github.com"></a>
+	    <a  class="si fa fa-globe" id="wb" href="https://christopherrobinbrown.com"></a>
+	    <a class="si fa fa-envelope" id="em" href="mail@mrlordvondoombraun.school"></a>
+	  </div>
 	</div>
-	
 	<script>
 	 document.addEventListener('DOMContentLoaded', function() {
 	     // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
