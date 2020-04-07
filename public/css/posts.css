@@ -1,3 +1,6 @@
+@import url("posts_mobile.css") screen and (max-width: 979px);
+@import url("post_desk.css") screen and (min-width: 980px);
+
 /* Global Styles */
 
 * {
@@ -13,24 +16,9 @@
     color: #e2a66e;
 }
 
-h1 {
-    font-family: 'Taviraj', serif;
-    font-size: 8vh;
-}
-
-h2 {
-    font-family: 'Taviraj', serif;
-    font-size: 4vh;
-}
-
-h3 {
-    font-family: 'Taviraj', serif;
-    font-size: 2vh;
-}
-
-h4 {
-    font-family: 'Taviraj', serif;
-    font-size: 1vh;
+p {
+    padding-left: 1vw;
+    padding-bottom: 2vh;
 }
 
 #sub-form {
@@ -74,153 +62,17 @@ a:active {
 }
 
 .post-hd {
+    padding-left: 1vw;
     background-color: #4a148c;
     color: #b2ebf2;
 }
 
 .post-sub {
+padding-left: 1vw;
     background-color: #7c43bd;
     color: #b2ebf2;
 }
 
-@media only screen and (max-width: 760px) {
-    .mobile {
-	display: block;
-    }
-    
-    .desk {
-	display: none;
-    }
-    
-    /* Base Styles */
-    
-    h1 {
-	font-family: 'Taviraj', serif;
-	font-size: 4vh;
-    }
-    
-    h2 {
-	font-family: 'Taviraj', serif;
-	font-size: 3vh;
-    }
-    
-    h3 {
-	font-family: 'Taviraj', serif;
-	font-size: 2vh;
-    }
-    
-    h4 {
-	font-family: 'Taviraj', serif;
-	font-size: 1vh;
-    }
-    
-    /* Mobile Grid */
-    
-    #index-cont {
-	display: grid;
-	grid-template-areas:  "hd"
-				  "nv"
-				  "pt"
-				  "ft";
-	grid-template-rows: 8vh 8vh 76vh 8vh;
-	grid-template-columns: 100vw;
-	justify-content: stretch;
-	align-content: stretch;
-	align-items: stretch;
-	justify-items: stretch;
-    }
-    
-    #index-menu {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
-	align-content: stretch;
-	align-items: center;
-	grid-area: nv;
-	color: #e2a66e;
-	background-color: black;
-    }
-    
-}
-
-@media only screen and (min-width: 761px) {
-    .mobile {
-	display: none;
-    }
-    
-    .desk {
-	display: block;
-    }
-    
-    h1 {
-	font-family: 'Taviraj', serif;
-	font-size: 8vh;
-    }
-    
-    h2 {
-	font-family: 'Taviraj', serif;
-	font-size: 4vh;
-    }
-    
-    h3 {
-	font-family: 'Taviraj', serif;
-	font-size: 2vh;
-    }
-    
-    h4 {
-	font-family: 'Taviraj', serif;
-	font-size: 1vh;
-    }
-    
-    /* Desktop Grid */
-    
-    #index-cont {
-	display: grid;
-	grid-template-areas:  "hd hd"
-				  "nv pt";
-	grid-template-rows: 15vh 75vh;
-	grid-template-columns: 10vw 90vw;
-	justify-content: stretch;
-	align-content: stretch;
-	align-items: stretch;
-	justify-items: stretch;
-    }
-
-    #index-menu {
-	color: #e2a66e;
-	background-color: black;
-	display: grid;
-	grid-template-areas: "hbtn"
-				 "pbtn"
-				 "."
-				 "sbtn";
-	grid-template-rows: repeat(3,15vh) ;
-	grid-template-columns: auto;
-	grid-area: nv;
-	align-self: stretch;
-	align-content: stretch;
-	justify-content: stretch;	
-    }
-    
-    .item {
-	border: 0px solid black;
-	color: #e2a66e;
-	background-color: black;
-	text-shadow: 2px 2px 2px #e2a66e;
-    }
-    
-    #home {
-	grid-area: hbtn;
-    }
-    
-    #posts {
-	grid-area: pbtn;
-    }
-    
-    #subscribe {
-	grid-area: sbtn;
-    }
-}
 
 #top {
     position: fixed;
@@ -232,11 +84,6 @@ a:active {
     text-align: center;
     padding: 5px;
     border-radius: 25%;
-}
-
-h1 {
-    color: #e2a66e;
-    text-shadow: -3px -3px #2c2c2c;
 }
 
 .card-item {
