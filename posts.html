@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-	<meta name="description" content="Udacity Front-End Development Nanodegree - Project 1, Author: Christopher R. Brown, Submit Date: April, 7 2020, Version: 1.0"> 
+	<meta name="description" content="Udacity Front-End Development Nanodegree - Project 1, Author: Christopher R. Brown, Submit Date: April, 7 2020, Version: 1.0">
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Blogorama Bloginator</title>
@@ -9,10 +9,6 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<!-- link google fonts -->
 	<link href="https://fonts.googleapis.com/css2?family=Kanit&family=Taviraj&display=swap" rel="stylesheet">
-	<script defer src="/__/firebase/7.13.1/firebase-app.js"></script>
-	<script defer src="/__/firebase/7.13.1/firebase-auth.js"></script>
-	<!-- initialize the SDK after all desired features are loaded -->
-	<script defer src="/__/firebase/init.js"></script>
 	<link href="css/posts_global.css" rel="stylesheet">
     </head>
     <body>
@@ -113,27 +109,5 @@
 		<a class="si fa fa-envelope" id="em" href="mailto:mrlordvondoombraun@gmail.com"></a>
 	    </div>
 	</div>
-	<script>
-	 document.addEventListener("DOMContentLoaded", function() {
-	     // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-	     // // The Firebase SDK is initialized and available here!
-             //
-             // firebase.auth().onAuthStateChanged(user => { });
-             // firebase.database().ref("/path/to/ref").on("value", snapshot => { });
-             // firebase.messaging().requestPermission().then(() => { });
-             // firebase.storage().ref("/path/to/ref").getDownloadURL().then(() => { });
-             //
-             // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-
-             try {
-		 let app = firebase.app();
-		 let features = ["auth", "database", "messaging", "storage"].filter(feature => typeof app[feature] === "function");
-		 document.getElementById("load").innerHTML = `Firebase SDK loaded with ${features.join(", ")}`;
-             } catch (e) {
-		 console.error(e);
-		 document.getElementById("load").innerHTML = "Error loading the Firebase SDK, check the console.";
-             }
-	 });
-	</script>
     </body>
 </html>

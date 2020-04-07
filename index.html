@@ -1,22 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-<meta name="description" content="Udacity Front-End Development Nanodegree - Project 1, Author: Christopher R. Brown, Submit Date: April, 7 2020, Version: 1.0"> 
-      <meta charset="utf-8">
+	<meta name="description" content="Udacity Front-End Development Nanodegree - Project 1, Author: Christopher R. Brown, Submit Date: April, 7 2020, Version: 1.0">
+	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-
-	  <title>Blogorama Bloginator</title>
+	<title>Blogorama Bloginator</title>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link href="https://fonts.googleapis.com/css2?family=Kanit&family=Taviraj&display=swap" rel="stylesheet">
-	<!-- update the version number as needed -->
-	<script defer src="/__/firebase/7.13.1/firebase-app.js"></script>
-	<!-- include only the Firebase features as you need -->
-	<script defer src="/__/firebase/7.13.1/firebase-auth.js"></script>
-	<script defer src="/__/firebase/7.13.1/firebase-database.js"></script>
-	<script defer src="/__/firebase/7.13.1/firebase-messaging.js"></script>
-	<script defer src="/__/firebase/7.13.1/firebase-storage.js"></script>
-	<!-- initialize the SDK after all desired features are loaded -->
-	<script defer src="/__/firebase/init.js"></script>
 	<link href="css/index_global.css"  rel="stylesheet">
     </head>
     <body>
@@ -45,36 +35,36 @@
 		</form>
 	    </nav>
 	    <article id="sums">
-		    <section id="post-1" class="odd">
-			<img alt="light element icon" class="icon light" src="assets/fire.png">
-			<p class="sum-txt desk"> The element of fire is not for the faint of heart.</p>
-			<h2>
-			  <a href="posts.html#post-fire" class="sum">
-			  <h2>Fire</h2></a>
-		    </section>
+		<section id="post-1" class="odd">
+		    <img alt="light element icon" class="icon light" src="assets/fire.png">
+		    <p class="sum-txt desk"> The element of fire is not for the faint of heart.</p>
+		    <h2>
+			<a href="posts.html#post-fire" class="sum">
+			    <h2>Fire</h2></a>
+		</section>
 		<section id="post-2" class="even">
 		    <img class="icon dark" alt="water element icon" src="assets/water.png">
 		    <p class="sum-txt desk"> If you need to talk about it, the rain always listens.</p>
 		    <a href="posts.html#post-water" class="sum"><h2> Water</h2></a>
 		</section>
 		<section id="post-3" class="odd">
-		   <img class="icon light"  alt="air element icon" src="assets/air.png">
+		    <img class="icon light"  alt="air element icon" src="assets/air.png">
 		    <p class="sum-txt desk">A breath of fresh air is great for the mind.</p>
 		    <a class="sum"href="posts.html#post-air"><h2> Air</h2></a>
 		</section>
 		<section id="post-4" class="even">
-	     	  <img class="icon dark"  alt="earth element icon" src="assets/earth.png">
+	     	    <img class="icon dark"  alt="earth element icon" src="assets/earth.png">
 		    <p class="sum-txt desk">Grounded is only one way to describe this element</p>
 		    <a class="sum" href="posts.html#post-earth"> <h2> Earth</h2></a>
 		</section>
 		<section id="post-5" class="odd">
-	     <img class="icon light"  alt="light element icon" src="assets/light.png"></a>
+		    <img class="icon light"  alt="light element icon" src="assets/light.png"></a>
 		    <p class="sum-txt desk">When it is too dark to see, shed some light on it.</p>
 		    <a class="sum" href="posts.html#post-light">	    <h2> Light</h2></a>
 		</section>
 		<section id="post-6" class="even">		   <img class="icon dark"  alt="dark element icon" src="assets/dark.png">
 		    <p class="sum-txt desk">When the light is too bright, it is easy to see in the dark.</p>
- <a href="posts.html#post-dark" class="sum"><h2> Dark</h2></a>
+		    <a href="posts.html#post-dark" class="sum"><h2> Dark</h2></a>
 		</section>
 	    </article>
 	    <footer id="foot" class="links mobile">
@@ -83,28 +73,5 @@
 		<a href="https://en.wikipedia.org/wiki/Blog" class="item">Blog</a>
 	    </footer>
 	</main>
-
-	<script>
-	 document.addEventListener('DOMContentLoaded', function() {
-	     // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-	     // // The Firebase SDK is initialized and available here!
-             //
-             // firebase.auth().onAuthStateChanged(user => { });
-             // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
-             // firebase.messaging().requestPermission().then(() => { });
-             // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
-             //
-             // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥xz🔥🔥🔥🔥🔥🔥🔥🔥
-
-             try {
-		 let app = firebase.app();
-		 let features = ['auth', 'database', 'messaging', 'storage'].filter(feature => typeof app[feature] === 'function');
-		 document.getElementById('load').innerHTML = `Firebase SDK loaded with ${features.join(', ')}`;
-             } catch (e) {
-		 console.error(e);
-		 document.getElementById('load').innerHTML = 'Error loading the Firebase SDK, check the console.';
-             }
-	 });
-	</script>
     </body>
 </html>
