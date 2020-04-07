@@ -1,0 +1,337 @@
+/* Global Styles */
+
+/* Remove Pre-Generated Styles*/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Kanit', sans-serif;
+}
+
+/* Subscribe Form */
+
+#sub-form {
+    display: none;
+    position: fixed;
+    height: 60vh;
+    width: 60vw;
+    background-color: black;
+    top: 20vh;
+    left: 5vw;
+    z-index: 2;
+    padding: 2vw;
+    opacity: 1;
+}
+
+#subscribe:hover+#sub-form, #sub-form:hover {
+    display: block;
+}
+
+
+/* Summary Grid Locations and Styles */
+
+.sum-txt {
+    margin: 1vw;
+}
+
+#post-1 {
+    grid-area: p1;
+}
+
+#post-2 {
+    grid-area: p2;
+}
+
+#post-3 {
+    grid-area: p3;
+}
+
+#post-4 {
+    grid-area: p4;
+}
+
+#post-5 {
+    grid-area: p5;
+}
+
+#post-6 {
+    grid-area: p6;
+}
+
+.odd, .light {
+    background-color: #7c43bd;
+}
+
+.even, .dark {
+    background-color: #4a148c;
+}
+
+.icon {
+    height: 5vh;
+}
+
+/* Summary Content Using Flexbox */
+
+.odd:hover, .even:hover {
+    box-shadow: -6px 0px 4px #b2ebf2 inset;
+    opacity: 1;
+    transition: all .5s;
+}
+
+/* Footer Links Using Flexbox */
+#foot {
+    grid-area: ft;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+}
+
+/* Apply Styles to Links */
+
+a:link {
+    background-color: black;
+    text-decoration: none;
+    color: #e2a66e;
+    text-shadow: 2px 2px 2px black;
+}
+
+a:visited {
+    background-color: black;
+    text-decoration: none;
+    color: #e2a66e;
+    text-shadow: 2px 2px 2px black;
+}
+
+a:hover {
+    border-color: #e2a66e;
+    text-decoration: none;
+    color: black;
+    text-shadow: 0px 0px 2px #e2a66e;
+}
+
+a:active {
+    text-decoration: none;
+    color: black;
+    text-shadow: 0px 0px 2px black;
+    border: .5px dashed #2c2c2c;
+}
+
+/* Miscellaneous Styles */
+
+#index-title {
+    grid-area: hd;
+    background-color: black;
+    color: #e2a66e;
+}
+
+@media only screen and (min-width: 761px) {
+    /*Base Styles*/
+
+    .mobile {
+	display: none;
+    }
+
+    .desk {
+	display: block;
+    }
+
+    h1 {
+	font-family: 'Taviraj', serif;
+	font-size: 8vh;
+    }
+
+    h2 {
+	font-family: 'Taviraj', serif;
+	font-size: 4vh;
+    }
+
+    h3 {
+	font-family: 'Taviraj', serif;
+	font-size: 2vh;
+    }
+
+    h4 {
+	font-family: 'Taviraj', serif;
+	font-size: 1vh;
+    }
+
+    /* Desktop Grid */
+
+    #index-cont {
+	display: grid;
+	grid-template-areas:  "hd hd"
+	"nv pt"
+	"ft ft";
+	grid-template-rows: 15vh 75vh 10vh;
+	grid-template-columns: 10vw 90vw;
+	justify-content: stretch;
+	align-content: stretch;
+	align-items: stretch;
+	justify-items: stretch;
+    }
+
+    #index-menu {
+	color: #e2a66e;
+	background-color: black;
+	display: grid;
+	grid-template-areas: "hbtn"
+	"pbtn"
+	"."
+	"sbtn";
+	grid-template-rows: repeat(4,15vh);
+	grid-template-columns: auto;
+	grid-area: nv;
+	align-self: stretch;
+	align-content: stretch;
+	justify-content: stretch;
+
+    }
+
+    .item {
+	border: 0px solid black;
+	color: #e2a66e;
+	background-color: black;
+	text-shadow: 2px 2px 2px #e2a66e;
+    }
+
+    #home {
+	grid-area: hbtn;
+    }
+
+    #posts {
+	grid-area: pbtn;
+    }
+
+    #subscribe {
+	grid-area: sbtn;
+    }
+
+    /* Post Summary Grid */
+    #sums {
+	grid-area: pt;
+	display: grid;
+	grid-template-areas: "p1 p2 p3 p4 p5 p6";
+	grid-template-rows: auto;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+	align-content: stretch;
+	justify-content: stretch;
+	align-items: stretch;
+	justify-items: stretch;
+    }
+.odd, .even {
+    box-shadow: -2px 0px 2px  #b2ebf2 inset;
+    transition: all .5s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    align-content: space-between;
+    opacity: .5;
+    color: #b2ebf2;
+}
+
+}
+
+@media only screen and (max-width: 760px) {
+
+    .mobile {
+	display: block;
+    }
+
+    .desk {
+	display: none;
+    }
+    
+    /* Base Styles */
+
+    h1 {
+	font-family: 'Taviraj', serif;
+	font-size: 4vh;
+    }
+
+    h2 {
+	font-family: 'Taviraj', serif;
+	font-size: 3vh;
+    }
+
+    h3 {
+	font-family: 'Taviraj', serif;
+	font-size: 2vh;
+    }
+
+    h4 {
+	font-family: 'Taviraj', serif;
+	font-size: 1vh;
+    }
+
+    /* Mobile Grid */
+
+    #index-cont {
+	display: grid;
+	grid-template-areas:  "hd"
+	"nv"
+	"pt"
+	"ft";
+	grid-template-rows: 8vh 8vh 76vh 8vh;
+	grid-template-columns: 100vw;
+	justify-content: stretch;
+	align-content: stretch;
+	align-items: stretch;
+	justify-items: stretch;
+    }
+
+
+    #index-title {
+	grid-area: hd;
+	background-color: black;
+	color: #e2a66e;
+    }
+
+    #index-menu {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-content: stretch;
+	align-items: center;
+	grid-area: nv;
+	color: #e2a66e;
+	background-color: black;
+    }
+
+    /* Mobile Summary Grid */
+    
+    #sums {
+	grid-area: pt;
+	display: grid;
+	grid-template-areas: "p1"
+    	"p2"
+	"p3"
+	"p4"
+	"p5"
+	"p6";
+	grid-template-rows: repeat(6, 16.67%);
+	grid-template-columns: 100%;
+	align-content: stretch;
+	justify-content: stretch;
+	align-items: stretch;
+	justify-items: stretch;
+    }
+
+    .odd, .even {
+    box-shadow: -2px 0px 2px  #b2ebf2 inset;
+    transition: all .5s;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-content: center;
+    align-items: center;
+    justify-items: stretch;
+    opacity: .5;
+    color: #b2ebf2;
+}
+
+}
