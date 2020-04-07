@@ -1,6 +1,0 @@
-Debugger entered--Lisp error: (quit)
-  map-y-or-n-p(#f(compiled-function (buffer) #<bytecode 0x1134975>) #f(compiled-function (buffer) #<bytecode 0x1ae07b>) (#<buffer posts.css> #<buffer posts.html> #<buffer  *Minibuf-1*> #<buffer public> #<buffer assets> #<buffer css> #<buffer index.html> #<buffer *scratch*> #<buffer  *Minibuf-0*> #<buffer *Messages*> #<buffer  *code-conversion-work*> #<buffer  *Echo Area 0*> #<buffer  *Echo Area 1*> #<buffer  *RNC Input*> #<buffer  *RNC Input<2>*> #<buffer  *RNC Input<3>*> #<buffer  *RNC Input<4>*> #<buffer  *RNC Input<5>*> #<buffer  *RNC Input<6>*> #<buffer  *RNC Input<7>*> #<buffer  *RNC Input<8>*> #<buffer  *RNC Input<9>*> #<buffer  *RNC Input<10>*> #<buffer  *RNC Input<11>*> #<buffer  *RNC Input<12>*> #<buffer  *RNC Input<13>*> #<buffer  *RNC Input<14>*> #<buffer  *RNC Input<15>*> #<buffer  *RNC Input<16>*> #<buffer  *RNC Input<17>*> #<buffer  *RNC Input<18>*> #<buffer *Diff*> #<buffer *Backtrace*>) ("buffer" "buffers" "save") ((18 #f(compiled-function (buf) #<bytecode 0x3ac78d>) "view this buffer") (100 #f(compiled-function (buf) #<bytecode 0x3ac7c5>) "view changes in this buffer")))
-  save-some-buffers(nil)
-  funcall-interactively(save-some-buffers nil)
-  call-interactively(save-some-buffers nil nil)
-  command-execute(save-some-buffers)

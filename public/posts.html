@@ -1,21 +1,19 @@
 <!DOCTYPE html>
 <html>
     <head>
+	<meta name="description" content="Udacity Front-End Development Nanodegree - Project 1, Author: Christopher R. Brown, Submit Date: April, 7 2020, Version: 1.0"> 
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Blogorama Bloginator</title>
+	<!-- use font awesome social icons -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	  <link href="https://fonts.googleapis.com/css2?family=Kanit&family=Taviraj&display=swap" rel="stylesheet">	
-	<!-- update the version number as needed -->
+	<!-- link google fonts -->
+	<link href="https://fonts.googleapis.com/css2?family=Kanit&family=Taviraj&display=swap" rel="stylesheet">
 	<script defer src="/__/firebase/7.13.1/firebase-app.js"></script>
-	<!-- include only the Firebase features as you need -->
 	<script defer src="/__/firebase/7.13.1/firebase-auth.js"></script>
-	<script defer src="/__/firebase/7.13.1/firebase-database.js"></script>
-	<script defer src="/__/firebase/7.13.1/firebase-messaging.js"></script>
-	<script defer src="/__/firebase/7.13.1/firebase-storage.js"></script>
 	<!-- initialize the SDK after all desired features are loaded -->
 	<script defer src="/__/firebase/init.js"></script>
-	<link href="css/posts.css" rel="stylesheet">
+	<link href="css/posts_global.css" rel="stylesheet">
     </head>
     <body>
 	<main id="index-cont">
@@ -26,21 +24,21 @@
 		<a id="subscribe" class="item">subscribe</a>
 		<form id="sub-form" action="index.html">
 		    <fieldset>
-		      <legend>Subscribe</legend>
-		      <h2> The Blogorama Bloginator needs you!</h2>
-		      <h3> Subscribe today and keep The Blog-Blog out of trouble.</h3>
-		      <label for="who">Name:</label>
-		      <br>
-		      <input type="text" id="who" name="who">
-		      <br>
-		      <label for="email">Email:</label>
-		      <br>
-		      <input type="text" id="email" name="email">
-		      <br>
-		      <input type="submit" id="mit-it" name="mit-it" value="Subscribe!">
-		      <br>
-		  </fieldset>
-	      </form>
+			<legend>Subscribe</legend>
+			<h2> The Blogorama Bloginator needs you!</h2>
+			<h3> Subscribe today and keep The Blog-Blog out of trouble.</h3>
+			<label for="who">Name:</label>
+			<br>
+			<input type="text" id="who" name="who">
+			<br>
+			<label for="email">Email:</label>
+			<br>
+			<input type="text" id="email" name="email">
+			<br>
+			<input type="submit" id="mit-it" name="mit-it" value="Subscribe!">
+			<br>
+		    </fieldset>
+		</form>
 	    </nav>
 	    <section id="sums">
 		<article id="post-fire" class="posted">
@@ -50,16 +48,16 @@
 		    <br>
 		    <p><u>By Christopher Brown</u></p>
 		    <br>
-		    <p>Fire is one of the four classical elements in ancient Greek philosophy and science. It was commonly associated with the qualities of energy, assertiveness, and passion. In one Greek myth, Prometheus stole fire from the gods to protect the otherwise helpless humans, but was punished for this charity.[1]</p>
+		    <p><em>Fire</em> is one of the four classical elements in ancient Greek philosophy and science. It was commonly associated with the qualities of energy, assertiveness, and passion. In one Greek myth, Prometheus stole <em>fire</em> from the gods to protect the otherwise helpless humans, but was punished for this charity.</p>
 		</article>
 		<article id="post-water" class="posted">
-		    <h1 class="post-hd">Water</h1>
+		    <h1 class="post-hd">Water</h1>`
 		    <br>
 		    <h2 class="post-sub">If you need to talk about it, the rain always listens.</h2>
 		    <br>
 		    <p><u>By Christopher Brown</u></p>
 		    <br>
-		    <p>Water was one of many archai proposed by the Pre-socratics, most of whom tried to reduce all things to a single substance. However, Empedocles of Acragas (c. 495 – c. 435 BC) selected four archai for his four roots: air, fire, water and earth. Empedocles roots became the four classical elements of Greek philosophy. Plato (427–347 BC) took over the four elements of Empedocles. In the Timaeus, his major cosmological dialogue, the Platonic solid associated with water is the icosahedron which is formed from twenty equilateral triangles. This makes water the element with the greatest number of sides, which Plato regarded as appropriate because water flows out of one's hand when picked up, as if it is made of tiny little balls.</p>
+		    <p><em>Water</em> was one of many archai proposed by the Pre-socratics, most of whom tried to reduce all things to a single substance. However, Empedocles of Acragas (c. 495 – c. 435 BC) selected four archai for his four roots: <em>air, fire, water, and earth</em>. Empedocles roots became the four classical elements of Greek philosophy. Plato (427–347 BC) took over the four elements of Empedocles. In the Timaeus, his major cosmological dialogue, the Platonic solid associated with  is the icosahedron which is formed from twenty equilateral triangles. This makes  <em>water</em> the element with the greatest number of sides, which Plato regarded as appropriate because  <em>water</em> flows out of one's hand when picked up, as if it is made of tiny little balls.</p>
 		</article>
 		<article id="post-air" class="posted">
 		    <h1 class="post-hd">Air</h1>
@@ -68,7 +66,7 @@
 		    <br>
 		    <p><u>By Christopher Brown</u></p>
 		    <br>
-		    <p>According to Plato, it is associated with the octahedron; air is considered to be both hot and wet. The ancient Greeks used two words for air: aer meant the dim lower atmosphere, and aether meant the bright upper atmosphere above the clouds.[1] Plato, for instance writes that "So it is with air: there is the brightest variety which we call aether, the muddiest which we call mist and darkness, and other kinds for which we have no name...." Among the early Greek Pre-Socratic philosophers, Anaximenes (mid-6th century BCE) named air as the arche.[3] A similar belief was attributed by some ancient sources to Diogenes Apolloniates (late 5th century BCE), who also linked air with intelligence and soul (psyche), but other sources claim that his arche was a substance between air and fire.[4] Aristophanes parodied such teachings in his play The Clouds by putting a prayer to air in the mouth of Socrates.</p>
+		    <p>According to Plato, <em>air</em> is associated with the octahedron; <em>air</em> is considered to be both hot and wet. The ancient Greeks used two words for <em>air</em>: aer meant the dim lower atmosphere, and aether meant the bright upper atmosphere above the clouds. Plato, for instance writes that "So it is with <em>air</em>: there is the brightest variety which we call aether, the muddiest which we call mist and darkness, and other kinds for which we have no name...." Among the early Greek Pre-Socratic philosophers, Anaximenes (mid-6th century BCE) named <em>air</em> as the arche. A similar belief was attributed by some ancient sources to Diogenes Apolloniates (late 5th century BCE), who also linked <em>air</em> with intelligence and soul (psyche), but other sources claim that his arche was a substance between <em>air</em> and fire. Aristophanes parodied such teachings in his play The Clouds by putting a prayer to <em>air</em> in the mouth of Socrates.</p>
 		</article>
 		<article id="post-earth" class="posted">
 		    <h1 class="post-hd">Earth</h1>
@@ -77,7 +75,7 @@
 		    <br>
 		    <p><u>By Christopher Brown</u></p>
 		    <br>
-		    <p>Earth is one of the four classical elements in ancient Greek philosophy and science. It was commonly associated with qualities of heaviness, matter and the terrestrial world. Due to the hero cults, and chthonic underworld deities, the element of earth is also associated with the sensual aspects of both life and death in later occultism.</p>
+		    <p><em>Earth</em> is one of the four classical elements in ancient Greek philosophy and science. It was commonly associated with qualities of heaviness, matter and the terrestrial world. Due to the hero cults, and chthonic underworld deities, the element of <em>earth</em> is also associated with the sensual aspects of both life and death in later occultism.</p>
 		</article>
 		<article id="post-light" class="posted">
 		    <h1 class="post-hd">Light</h1>
@@ -86,7 +84,7 @@
 		    <br>
 		    <p><u>By Christopher Brown</u></p>
 		    <br>
-		    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam scelerisque euismod consectetur. Cras faucibus ullamcorper purus quis malesuada. Quisque eu ante vitae nisl luctus imperdiet. Aliquam sapien felis, faucibus nec finibus id, consequat id nunc. In erat nunc, fringilla eu sapien in, molestie iaculis lorem. Integer auctor nulla nec nunc lacinia vulputate. Praesent nec mi non nisi eleifend ultrices. Maecenas velit leo, facilisis vitae metus sed, suscipit lacinia ex. Vivamus id sollicitudin nulla. Nunc a risus at purus blandit rutrum et et erat. Ut tempus venenatis ligula, at sollicitudin orci maximus nec.</p>
+		    <q>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam scelerisque euismod consectetur. Cras faucibus ullamcorper purus quis malesuada. Quisque eu ante vitae nisl luctus imperdiet. Aliquam sapien felis, faucibus nec finibus id, consequat id nunc. In erat nunc, fringilla eu sapien in, molestie iaculis lorem. Integer auctor nulla nec nunc lacinia vulputate. Praesent nec mi non nisi eleifend ultrices. Maecenas velit leo, facilisis vitae metus sed, suscipit lacinia ex. Vivamus id sollicitudin nulla. Nunc a risus at purus blandit rutrum et et erat. Ut tempus venenatis ligula, at sollicitudin orci maximus nec.</q>
 		</article>
 		<article id="post-dark" class="posted">
 		    <h1 class="post-hd">Dark</h1>
@@ -95,40 +93,45 @@
 		    <br>
 		    <p><u>By Christopher Brown</u></p>
 		    <br>
-		    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam scelerisque euismod consectetur. Cras faucibus ullamcorper purus quis malesuada. Quisque eu ante vitae nisl luctus imperdiet. Aliquam sapien felis, faucibus nec finibus id, consequat id nunc. In erat nunc, fringilla eu sapien in, molestie iaculis lorem. Integer auctor nulla nec nunc lacinia vulputate. Praesent nec mi non nisi eleifend ultrices. Maecenas velit leo, facilisis vitae metus sed, suscipit lacinia ex. Vivamus id sollicitudin nulla. Nunc a risus at purus blandit rutrum et et erat. Ut tempus venenatis ligula, at sollicitudin orci maximus nec</p>
+		    <q>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam scelerisque euismod consectetur. Cras faucibus ullamcorper purus quis malesuada. Quisque eu ante vitae nisl luctus imperdiet. Aliquam sapien felis, faucibus nec finibus id, consequat id nunc. In erat nunc, fringilla eu sapien in, molestie iaculis lorem. Integer auctor nulla nec nunc lacinia vulputate. Praesent nec mi non nisi eleifend ultrices. Maecenas velit leo, facilisis vitae metus sed, suscipit lacinia ex. Vivamus id sollicitudin nulla. Nunc a risus at purus blandit rutrum et et erat. Ut tempus venenatis ligula, at sollicitudin orci maximus nec.</q>
 		</article>
 	</main>
 	<a href="posts.html"><div id="top">Top</div></a>
 	<div id="card-cont">
-	  <div id="card">
-	    <img id ="crb-pic" src="assets/crb.png" alt="Author Photo">
-	      <p class="card-item" id="at-nm">Christopher Brown</p>
-	      <p class="card-item desk" id="at-bio">Christopher Brown is a father, professional environmental planner, no-doz gamer, electronics and computer enthusiast, and poet. Some think he is a wizard; they may be right.</p>
-	    <a class="si fa fa-facebook" id="fb" href="https://facebook.com"></a>
-	    <a  class="si fa fa-github" id="gh" href="https://github.com"></a>
-	    <a  class="si fa fa-globe" id="wb" href="https://christopherrobinbrown.com"></a>
-	    <a class="si fa fa-envelope" id="em" href="mailto:mrlordvondoombraun@gmail.com"></a>
-	  </div>
+	    <div id="card">
+		<figure>
+		    <img id ="crb-pic" src="assets/crb.png" alt="Author Photo">
+		    <figcaption class="desk">The Bloginator<figcaption>
+		</figure>
+		<p class="card-item" id="at-nm">Christopher Brown</p>
+		<p class="card-item desk" id="at-bio">
+		    <b>Christopher Brown is a father, professional environmental planner, no-doz gamer, electronics and computer enthusiast, and poet. Some think he is a wizard; they may be right.</b></p>
+		<p class="card-item mobile" id="at-bio-mob">Father. Author. Wizard.</p>
+		<a class="si fa fa-facebook" id="fb" href="https://facebook.com"></a>
+		<a  class="si fa fa-github" id="gh" href="https://github.com"></a>
+		<a  class="si fa fa-globe" id="wb" href="https://christopherrobinbrown.com"></a>
+		<a class="si fa fa-envelope" id="em" href="mailto:mrlordvondoombraun@gmail.com"></a>
+	    </div>
 	</div>
 	<script>
-	 document.addEventListener('DOMContentLoaded', function() {
+	 document.addEventListener("DOMContentLoaded", function() {
 	     // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
 	     // // The Firebase SDK is initialized and available here!
              //
              // firebase.auth().onAuthStateChanged(user => { });
-              // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
-              // firebase.messaging().requestPermission().then(() => { });
-              // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
-              //
+             // firebase.database().ref("/path/to/ref").on("value", snapshot => { });
+             // firebase.messaging().requestPermission().then(() => { });
+             // firebase.storage().ref("/path/to/ref").getDownloadURL().then(() => { });
+             //
              // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-	     
+
              try {
 		 let app = firebase.app();
-		 let features = ['auth', 'database', 'messaging', 'storage'].filter(feature => typeof app[feature] === 'function');
-		 document.getElementById('load').innerHTML = `Firebase SDK loaded with ${features.join(', ')}`;
+		 let features = ["auth", "database", "messaging", "storage"].filter(feature => typeof app[feature] === "function");
+		 document.getElementById("load").innerHTML = `Firebase SDK loaded with ${features.join(", ")}`;
              } catch (e) {
 		 console.error(e);
-		 document.getElementById('load').innerHTML = 'Error loading the Firebase SDK, check the console.';
+		 document.getElementById("load").innerHTML = "Error loading the Firebase SDK, check the console.";
              }
 	 });
 	</script>

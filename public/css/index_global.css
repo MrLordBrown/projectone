@@ -9,7 +9,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Kanit', sans-serif;
+    font-family: "Kanit", sans-serif;
 }
 
 /* Subscribe Form */
@@ -17,20 +17,19 @@
 #sub-form {
     display: none;
     position: fixed;
-    height: 60vh;
+    height: auto;
     width: 60vw;
     background-color: black;
     top: 20vh;
     left: 5vw;
     z-index: 2;
     padding: 2vw;
-    opacity: 1;
+    opacity: 1.0;
 }
 
 #subscribe:hover+#sub-form, #sub-form:hover {
     display: block;
 }
-
 
 /* Summary Grid Locations and Styles */
 
@@ -77,9 +76,9 @@
 /* Summary Content Using Flexbox */
 
 .odd:hover, .even:hover {
-    box-shadow: -6px 0px 4px #b2ebf2 inset;
-    opacity: 1;
-    transition: all .5s;
+    box-shadow: -6px 0 4px #b2ebf2 inset;
+    opacity: 1.0;
+    transition: all 0.5s;
 }
 
 /* Footer Links Using Flexbox */
@@ -114,14 +113,14 @@
     border-color: #e2a66e;
     text-decoration: none;
     color: black;
-    text-shadow: 0px 0px 2px #e2a66e;
+    text-shadow: 0 0 2px #e2a66e;
 }
 
 .item:active {
     text-decoration: none;
     color: black;
     text-shadow: 0px 0px 2px black;
-    border: .5px dashed #2c2c2c;
+    border: 0.5px dashed #2c2c2c;
 }
 
 .sum:link {
@@ -142,13 +141,13 @@
     border-color: #b2ebf2;
     text-decoration: none;
     color: black;
-    text-shadow: 0px 0px 2px #b2ebf2;
+    text-shadow: 0 0 2px #b2ebf2;
 }
 
 .sum:active {
     text-decoration: none;
     color: black;
-    text-shadow: 0px 0px 2px black;
+    text-shadow: 0 0 2px black;
     border: .5px dashed #2c2c2c;
 }
 
@@ -162,34 +161,38 @@
 
 @media only screen and (min-width: 979px) {
     /*Base Styles*/
-
+    
     .mobile {
 	display: none;
     }
-
+    
     .desk {
 	display: block;
     }
 
     h1 {
-	font-family: 'Taviraj', serif;
+	font-family: "Taviraj", serif;
 	font-size: 8vh;
+	color: #e2a66e;
     }
 
     h2 {
-	font-family: 'Taviraj', serif;
+	font-family: "Taviraj", serif;
 	font-size: 4vh;
+	color: #000;
     }
 
     h3 {
-	font-family: 'Taviraj', serif;
+	font-family: "Taviraj", serif;
 	font-size: 2vh;
+ 	color: #e2a66e;
     }
-
+    
     h4 {
-	font-family: 'Taviraj', serif;
+	font-family: "Taviraj", serif;
 	font-size: 1vh;
-    }
+    	color: #2c2c2c;
+ }
 
     /* Desktop Grid */
 
@@ -209,7 +212,7 @@
     #index-menu {
 	font-size: 2vh;
 	color: #e2a66e;
-	background-color: black;
+	background-color: #000;
 	display: grid;
 	grid-template-areas: "hbtn"
 	"pbtn"
@@ -226,9 +229,9 @@
 
     .item {
 	font-size: 2vh;
-	border: 0px solid black;
+	border: 0 solid #000;
 	color: #e2a66e;
-	background-color: black;
+	background-color: #000;
 	text-shadow: 2px 2px 2px #e2a66e;
     }
 
@@ -256,16 +259,15 @@
 	align-items: stretch;
 	justify-items: stretch;
     }
-.odd, .even {
-    box-shadow: -2px 0px 2px  #b2ebf2 inset;
-    transition: all .5s;
+
+    .odd, .even {
+    box-shadow: -2px 0 2px  #b2ebf2 inset;
+    transition: all 0.5s;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     align-content: space-between;
-    opacity: .5;
-    color: #b2ebf2;
-}
-
+    opacity: 0.5;
+    color: #000;
 }

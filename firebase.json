@@ -1,5 +1,6 @@
 {
-  "hosting": {
+    "hosting": {
+	"site": "blogorama-bloginator",
     "public": "public",
     "ignore": [
       "firebase.json",
